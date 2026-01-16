@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Maybite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">MAYBITE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact" style="padding-top: 150px;">
+        <h2>Get In Touch</h2>
+        
+        <div class="contact-info" style="text-align: center; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p style="font-size: 20px; color: #d0d0d0; line-height: 1.8; margin-bottom: 30px;">
+                Have a question or want to place an order? We'd love to hear from you! 
+                Fill out the form below and our team will get back to you within 24 hours.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                <div style="background: rgba(218, 165, 32, 0.08); padding: 30px; border-radius: 15px; border: 2px solid rgba(218, 165, 32, 0.3);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📞</div>
+                    <h3 style="color: #DAA520; margin-bottom: 10px;">Phone</h3>
+                    <p style="color: #c0c0c0;">+923442089665</p>
+                </div>
+                <div style="background: rgba(218, 165, 32, 0.08); padding: 30px; border-radius: 15px; border: 2px solid rgba(218, 165, 32, 0.3);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📧</div>
+                    <h3 style="color: #DAA520; margin-bottom: 10px;">Email</h3>
+                    <p style="color: #c0c0c0;">mayeshanaseem156@gmail.com</p>
+                </div>
+                <div style="background: rgba(218, 165, 32, 0.08); padding: 30px; border-radius: 15px; border: 2px solid rgba(218, 165, 32, 0.3);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📍</div>
+                    <h3 style="color: #DAA520; margin-bottom: 10px;">Location</h3>
+                    <p style="color: #c0c0c0;">Karachi, Pakistan</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form onsubmit="submitForm(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div style="margin-top: 80px; background: rgba(218, 165, 32, 0.08); padding: 50px; border-radius: 25px; border: 2px solid rgba(218, 165, 32, 0.3); text-align: center;">
+            <h3 style="color: #DAA520; font-size: 32px; margin-bottom: 20px;">Business Hours</h3>
+            <p style="color: #d0d0d0; font-size: 20px; line-height: 2;">
+                <strong>Monday - Friday:</strong> 10:00 AM - 11:00 PM<br>
+                <strong>Saturday - Sunday:</strong> 11:00 AM - 12:00 AM
+            </p>
+            <p style="color: #FFD700; font-size: 22px; margin-top: 30px;">
+                ✨ Free Delivery on Orders Above Rs. 2000 ✨
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">MAYBITE</div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p style="color: #888; margin-top: 30px;">Premium Frozen & Fast Food Excellence</p>
+        <p style="color: #DAA520; margin-top: 15px;">Free Delivery on Orders Above Rs. 2000</p>
+        <p style="color: #666; margin-top: 20px;">© 2024 Maybite. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

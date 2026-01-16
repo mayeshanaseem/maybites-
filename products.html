@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Maybite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">MAYBITE</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+
+```
+    <div class="cart-icon" onclick="showCart()" style="cursor:pointer;">
+        🛒 <span class="cart-count">0</span>
+    </div>
+</div>
+```
+
+</nav>
+
+<!-- PRODUCTS -->
+
+<section id="products" style="padding-top:150px;">
+    <h2>Premium Collection</h2>
+
+```
+<div class="category-tabs">
+    <button class="tab-btn active" onclick="filterProducts('all', event)">All</button>
+    <button class="tab-btn" onclick="filterProducts('frozen', event)">Frozen Food</button>
+    <button class="tab-btn" onclick="filterProducts('fast', event)">Fast Food</button>
+</div>
+
+<div class="products-grid">
+
+    <!-- SAMPLE PRODUCT -->
+    <div class="product-card" data-category="frozen">
+        <div class="product-img-container">
+            <img src="04-5.jpg" alt="Chicken Cheese Pocket" class="product-img">
+            <div class="product-badge">BESTSELLER</div>
+        </div>
+        <div class="product-info">
+            <div class="product-category">Frozen Food</div>
+            <h3>Chicken Cheese Pocket</h3>
+            <p>Pack of 6 crispy chicken cheese pockets</p>
+            <div class="product-footer">
+                <div class="price">Rs. 299</div>
+                <button class="add-to-cart"
+                    onclick="addToCart('Chicken Cheese Pocket', 299)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAST FOOD -->
+    <div class="product-card" data-category="fast">
+        <div class="product-img-container">
+            <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=800" class="product-img">
+        </div>
+        <div class="product-info">
+            <div class="product-category">Fast Food</div>
+            <h3>Shawarma</h3>
+            <p>Traditional shawarma with special sauce</p>
+            <div class="product-footer">
+                <div class="price">Rs. 160</div>
+                <button class="add-to-cart"
+                    onclick="addToCart('Shawarma', 160)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-card" data-category="fast">
+        <div class="product-img-container">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800" class="product-img">
+        </div>
+        <div class="product-info">
+            <div class="product-category">Fast Food</div>
+            <h3>Large Pizza</h3>
+            <p>14 inch family pizza</p>
+            <div class="product-footer">
+                <div class="price">Rs. 750</div>
+                <button class="add-to-cart"
+                    onclick="addToCart('Large Pizza', 750)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- JS -->
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
